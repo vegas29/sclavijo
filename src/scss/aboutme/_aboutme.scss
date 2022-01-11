@@ -1,0 +1,50 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.aboutme__head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    gap: 1rem;
+
+    img{
+        width: 5rem;
+    }
+    
+}
+
+.aboutme__title{
+    color: v.$secundario;
+    font-weight: bold;
+    font-size: 4rem;
+
+    @include m.desktop { 
+        font-size: 5rem;
+    }
+}
+
+.aboutme__body{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    @include m.desktop { 
+        flex-direction: row;
+    }
+}
+
+.aboutme__picture{
+    overflow: hidden;
+    width: 25rem;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.aboutme__text{
+    max-width: 90%;
+    width: 90%;
+    margin: 0 auto;
+}
+

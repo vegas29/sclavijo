@@ -29,18 +29,62 @@
 <body>
   
     <header class="header">
+        
         <nav class="header__nav">
             <a class="header__nav-en" href="#">Inicio</a>
             <a class="header__nav-en" href="#">Acerca de</a>
             <a class="header__nav-en" href="#">Portafolio</a>
         </nav>
 
+        <!--Menu Icono-->
+
+        <div class="header__menu">
+            <i class="fas fa-bars" onclick="openNav()"></i>
+        </div>
+        <!--.Menu Icono-->
+
         <div class="header__title">
             <img src="build/img/logo.png" alt="logo">
-            <p class="header__title-name">Samuel Samuel Samuel Samuel</p>
+            <p class="header__title-name">Samuel Clavijo Samuel Samuel</p>
             <p class="header__title-pro">Diseñador gráfico y Artista 3D</p>
         </div>
     </header>
+
+    <!--Menu Movil-->
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">Inicio</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Portafolio</a>
+        </div>
+    </div>
+
+    <!--.Menu Movil-->
+
+
+    <section class="aboutme contenedor">
+        <div class="aboutme__head">
+            <img class="aboutme__img" src="build/img/nave.png" alt="nave">
+            <h2 class="aboutme__title">Acerca de mi</h2>
+        </div>
+
+        <div class="aboutme__body">
+            <div class="aboutme__picture">
+                <img src="build/img/pp.jpg" alt="Samuel Clavijo">
+            </div>
+
+            <div class="aboutme__text">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+                
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+            </div>
+        </div>
+        
+
+    </section>
     
+    <script src="build/js/app.js"></script>
 </body>
 </html>

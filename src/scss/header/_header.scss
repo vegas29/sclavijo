@@ -5,21 +5,47 @@
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: top;
     height: 100vh;
+
+    @include m.desktop { 
+        background-position: top center;
+    }
 }
 
+.header__menu{
+    display: block;
+    text-align: center;
+    padding: 2rem;
+
+    i{
+        color: v.$blanco;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+
+    @include m.desktop { 
+        display: none; 
+    }
+}
+
+
 .header__nav{
-    display: flex;
-    justify-content: center;
-    padding-top: 5rem;
-    gap: 20rem;
+    display: none;
+
+    @include m.desktop { 
+        display: flex;
+        justify-content: center;
+        padding-top: 5rem;
+        gap: 20rem;
+    } 
 }
 
 .header__nav-en{
     color: v.$blanco;
     font-weight: 700;
     padding: 1rem 3rem;
+    font-size: 2rem;
 
     &:hover{
         background-color: v.$blanco;
@@ -37,17 +63,24 @@
     height: 80%;
     text-transform: uppercase;
     color: v.$blanco;
-    
-    .header__title-logo{
-        margin: 0;
-        padding: 0;
+
+    img{
+        width: 85%;
+
+        @include m.desktop { 
+            width: 55%;
+        }
     }
 
     .header__title-name{
         text-transform: capitalize;
-        font-size: 4rem;
+        font-size: 2.4rem;
         margin: 0;
         font-weight: bold;
+
+        @include m.desktop { 
+            font-size: 4rem;
+        }
     }
 
     .header__title-pro{
@@ -55,6 +88,10 @@
         text-transform: capitalize;
         margin: 0;
         font-style: oblique;
-        font-size: 3rem;
+        font-size: 2rem;
+
+        @include m.desktop { 
+            font-size: 3rem; 
+        }
     }
 }
