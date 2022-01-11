@@ -1,0 +1,60 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header{
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 100vh;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    gap: 20rem;
+}
+
+.header__nav-en{
+    color: v.$blanco;
+    font-weight: 700;
+    padding: 1rem 3rem;
+
+    &:hover{
+        background-color: v.$blanco;
+        color: v.$primario;
+        padding: 1rem 3rem;
+        border-radius: 1rem;
+    }
+}
+
+.header__title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    text-transform: uppercase;
+    color: v.$blanco;
+    
+    .header__title-logo{
+        margin: 0;
+        padding: 0;
+    }
+
+    .header__title-name{
+        text-transform: capitalize;
+        font-size: 4rem;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .header__title-pro{
+        font-weight: 300;
+        text-transform: capitalize;
+        margin: 0;
+        font-style: oblique;
+        font-size: 3rem;
+    }
+}
