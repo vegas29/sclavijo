@@ -1,0 +1,14 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background: v.$secundario;
+	font-size:20px;
+	color: v.$blanco;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}

@@ -6,10 +6,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    height: 100vh;
+    height: 50vh;
 
     @include m.desktop { 
         background-position: top center;
+        height: 100vh;
     }
 }
 

@@ -37,9 +37,13 @@
 
 .aboutme__picture{
     overflow: hidden;
-    width: 26rem;
+    width: 20rem;
     border-radius: 50%;
     margin: 0 auto;
+
+    @include m.desktop { 
+        width: 26rem;
+    }
 }
 
 .aboutme__text{
