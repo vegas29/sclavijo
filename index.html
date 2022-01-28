@@ -31,19 +31,27 @@
 <body>
   
     <header class="header">
-        
-        <nav class="header__nav">
-            <a class="header__nav-en" data-aos="fade-left" data-aos-duration="2000" href="#">Inicio</a>
-            <a class="header__nav-en" data-aos="fade-left" data-aos-duration="2000" href="#">Acerca de</a>
-            <a class="header__nav-en" data-aos="fade-left" data-aos-duration="2000" href="#">Portafolio</a>
-        </nav>
+
+        <!--<div class="header__layer"></div>-->
 
         <!--Menu Icono-->
 
-        <div class="header__menu">
-            <i class="fas fa-bars" onclick="openNav()"></i>
+        <div class="header__flex">
+            <div class="header__menu">
+                <i class="fas fa-bars" onclick="openNav()"></i>
+            </div>
+            <div class="flex__menu">
+                <a class="menu__item" href="english.html"><img src="build/img/spanish.png" alt=""></a>
+                <a class="menu__item" href="english.html"><i class="fas fa-moon"></i></a>
+            </div>
         </div>
+
+        
+   
         <!--.Menu Icono-->
+
+        <!-- The overlay -->
+
 
         <div class="header__title">
             <img data-aos="fade-up" data-aos-duration="1000" src="build/img/logo.png" alt="logo">
@@ -68,7 +76,6 @@
 
     <section class="aboutme contenedor">
         <div id="aboutme" data-aos="fade-right"  class="aboutme__head">
-            <img class="aboutme__img" src="build/img/nave.png" alt="nave">
             <h2 class="aboutme__title">Acerca de mi</h2>
         </div>
 
@@ -80,7 +87,34 @@
             <div class="aboutme__text">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
                 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+                <h4>Idiomas</h4>
+
+                <div class="aboutme__flex">
+                    <div class="language">
+                        <img class="language__img" src="build/img/spanish.png" alt="Idioma espanol">
+                        <div class="language__text">
+                            <p class="language__name">Español</p>
+                            <p class="language__lvl">Nativo</p>
+                        </div>
+                    </div><!--Language Item-->
+
+                    <div class="language">
+                        <img class="language__img" src="build/img/english.png" alt="Idioma espanol">
+                        <div class="language__text">
+                            <p class="language__name">Inglés</p>
+                            <p class="language__lvl">Nivel: B1</p>
+                        </div>
+                        
+                    </div><!--Language Item-->
+
+                    <div class="language">
+                        <img class="language__img" src="build/img/France.png" alt="Idioma espanol">
+                        <div class="language__text">
+                            <p class="language__name">Frances</p>
+                            <p class="language__lvl">Nivel: A2</p>
+                        </div>
+                    </div><!--Language Item-->
+                </div>
             </div>
             
         </div>
@@ -470,11 +504,11 @@
     <footer class="footer">
         <h3 data-aos="fade-up" class="footer__title">Redes Sociales</h3>
 
-        <div data-aos="fade-left" data-aos-duration="2000" class="footer__redes">
+        <div class="footer__redes">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/sclaviijob/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-pinterest"></i></a>
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.behance.net/samuelclavijo" target="_blank"><i class="fab fa-behance"></i></a>
+            <a href="#textarea"><i class="fab fa-whatsapp"></i></a>
         </div>
 
         <div class="footer__credits">

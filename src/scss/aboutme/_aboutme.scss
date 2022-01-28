@@ -42,7 +42,7 @@
     margin: 0 auto;
 
     @include m.desktop { 
-        width: 26rem;
+        width: 30rem;
     }
 }
 
@@ -52,3 +52,56 @@
     margin: 0 auto;
 }
 
+.aboutme__flex{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    @include m.tablet{
+        display: flex;
+        justify-content: center;
+    }
+
+    @include m.desktop{
+        justify-content: flex-start;
+    }
+}
+
+.language{
+    display: flex;
+    gap: 1rem;
+}
+
+.language__img{
+    background-color: v.$blanco;
+    border: 1px solid v.$gris;
+    border-radius: 5rem;
+    padding: 1.2rem;
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+    
+}
+
+.language__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.language__name{
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.language__lvl{
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    font-weight: lighter;
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF8AA9;}
+	.st1{clip-path:url(#SVGID_2_);}
+	.st2{fill:#FFFFFF;}
+</style>
+<g>
+	<path class="st0" d="M259.9,338.9c-31.7,11.1-70.6-56.5-88.5-65.4c-35.2-17.5-95.6-11.9-71.9-52.1c11-18.6,33.8-43.9,42.4-58.5
+		c17.4-29.5-16.6-82.5,14-97.9c30.5-15.4,56.5,19.4,86.4,30.9c19.8,7.6,41,3.8,61.2,7.8c13.9,2.7,26.1,18.3,18,33.4
+		C271.4,230.6,313.6,320,259.9,338.9z"/>
+	<g>
+		<g>
+			<defs>
+				<path id="SVGID_1_" d="M300.5,272c54.9-44.1,48.3-92.4,2.8-83.2c-35.1,7.1-42.3-13.1-62.2-44.3c-20.5-32-66.6-8.5-96.7-26.8
+					c-50.9-31-51.9,19.3-52.3,53c-0.5,33.4-44.1,51.8-35.6,94.8c6.9,34.9,60.9,4.3,113.3,34.1C241,340.1,250.7,312.1,300.5,272z"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="matrix(1 0 0 1 1.907349e-06 0)" class="st1">
+				
+					<image style="overflow:visible;enable-background:new    ;" width="1200" height="800" xlink:href="B9EF3E80.jpeg"  transform="matrix(0.2908 0 0 0.2908 25.5266 84.326)">
+				</image>
+			</g>
+			<g transform="matrix(1 0 0 1 0 -7.629395e-06)" class="st1">
+				
+					<image style="overflow:visible;" width="503" height="667" xlink:href="../../../GiieArt/src/imgs/profile.png"  transform="matrix(0.5813 0 0 0.5813 54.3428 76.4257)">
+				</image>
+			</g>
+		</g>
+	</g>
+	<g>
+		<path class="st2" d="M65.3,281.3c-0.3,0-0.6-0.1-0.9-0.4c-0.5-0.5-0.5-1.3,0-1.8l39.4-39.4c0.5-0.5,1.3-0.5,1.8,0s0.5,1.3,0,1.8
+			l-39.4,39.4C65.9,281.1,65.6,281.3,65.3,281.3z"/>
+	</g>
+	<g>
+		<path class="st2" d="M231.8,170.7c-0.3,0-0.6-0.1-0.9-0.4c-0.5-0.5-0.5-1.3,0-1.8l82.7-82.7c0.5-0.5,1.3-0.5,1.8,0s0.5,1.3,0,1.8
+			l-82.7,82.7C232.4,170.6,232.1,170.7,231.8,170.7z"/>
+	</g>
+</g>
+</svg>
