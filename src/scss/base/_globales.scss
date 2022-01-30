@@ -19,6 +19,20 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.bodyNight{
+    background-color: v.$negro;
+    color: v.$blanco !important;
+}
+
+.pNight{
+    color: v.$blanco !important;
+}
+
+.sun{
+    color: v.$secundario;
+}
+
 img {
     max-width: 100%;
     display: block;

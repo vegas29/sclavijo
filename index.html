@@ -24,7 +24,10 @@
     <!--.Favicon-->
     <!--CDN AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <!--CDN Splider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="build/css/app.css">
     
 </head>
@@ -32,7 +35,7 @@
   
     <header class="header">
 
-        <!--<div class="header__layer"></div>-->
+        <div class="header__layer"></div>
 
         <!--Menu Icono-->
 
@@ -41,8 +44,8 @@
                 <i class="fas fa-bars" onclick="openNav()"></i>
             </div>
             <div class="flex__menu">
-                <a class="menu__item" href="english.html"><img src="build/img/spanish.png" alt=""></a>
-                <a class="menu__item" href="english.html"><i class="fas fa-moon"></i></a>
+                <a class="menu__item" href="english.html"><img src="build/img/english.png" alt="english"></a>
+                <a class="menu__item" onclick="nochePaz()"><i class="fas fa-moon"></i></a>
             </div>
         </div>
 
@@ -65,9 +68,11 @@
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="#">Inicio</a>
-            <a href="#aboutme">Acerca de</a>
+            <a href="#aboutme">Acerca de mi</a>
+            <a href="#studiesexp">Estudios & Experiencias</a>
+            <a href="#skills">Habilidades</a>
             <a href="#portfolio">Portafolio</a>
+            <a href="#contactme">Contacto</a>
         </div>
     </div>
 
@@ -87,7 +92,7 @@
             <div class="aboutme__text">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
                 
-                <h4>Idiomas</h4>
+                <h4 class="aboutme__languages">Idiomas</h4>
 
                 <div class="aboutme__flex">
                     <div class="language">
@@ -118,385 +123,662 @@
             </div>
             
         </div>
+
+        <!--Cualidades-->
+        <div class="aboutme__qualities">
+            <h3 class="aboutme__subtitle">Cualidades</h3>
+
+            <!--Grid Cualidades-->
+            <div class="grid__qualities">
+
+                <div class="quality__item">
+                    <i class="fas fa-lightbulb"></i>
+                    <p class="quality__text">Creatividad</p>
+                </div><!--Item-->
+
+                <div class="quality__item">
+                    <i class="fas fa-comments"></i>
+                    <p class="quality__text">Comunicacion</p>
+                </div><!--Item-->
+
+                <div class="quality__item">
+                    <i class="fas fa-cogs"></i>
+                    <p class="quality__text">Versatilidad</p>
+                </div><!--Item-->
+
+                <div class="quality__item">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <p class="quality__text">Organizacion</p>
+                </div><!--Item-->
+
+                <div class="quality__item">
+                    <i class="fas fa-users"></i>
+                    <p class="quality__text">Equipo</p>
+                </div><!--Item-->
+
+                <div class="quality__item">
+                    <i class="fas fa-signal"></i>
+                    <p class="quality__text">Proactividad</p>
+                </div><!--Item-->
+
+            </div>
+        </div>
+        <!--.Cualidades-->
+
+        <!--Intereses-->
+        <div class="aboutme__interests">
+            <h3 class="aboutme__subtitle">Intereses</h3>
+
+            <!--Grid Cualidades-->
+            <div class="grid__interests">
+
+                <div class="interest__item">
+                    <img class="interest__img" src="./build/img/volleyball.jpg" alt="Volleyball">
+                    <div class="overlay__img">
+                      <div class="text">Volleyball</div>
+                    </div>
+                </div><!--Item-->
+
+                <div class="interest__item">
+                    <img class="interest__img" src="./build/img/astronomia.jpg" alt="Astronomia">
+                    <div class="overlay__img">
+                      <div class="text">Astronomía</div>
+                    </div>
+                </div><!--Item-->
+
+                <div class="interest__item">
+                    <img class="interest__img" src="./build/img/arte.jpg" alt="Arte">
+                    <div class="overlay__img">
+                      <div class="text">Arte</div>
+                    </div>
+                </div><!--Item-->
+
+                <div class="interest__item">
+                    <img class="interest__img" src="./build/img/gato1.jpg" alt="Gatos">
+                    <div class="overlay__img">
+                      <div class="text">Gatos</div>
+                    </div>
+                </div><!--Item-->
+
+                <div class="interest__item">
+                    <img class="interest__img" src="./build/img/videojuegos.jpg" alt="Videojuegos">
+                    <div class="overlay__img">
+                      <div class="text">Videojuegos</div>
+                    </div>
+                </div><!--Item-->
+
+        </div>
         
     </section>
 
-    <section id="portfolio" class="portfolio contenedor">
+    <section id="studiesexp" class="studies ">
+        <div class="banner__studiesexp">
+            <div class="studiesexp__layer"></div>
+            <div data-aos="fade-right"  class="portfolio__head">
+                <h2 class="studiesexp__title">Estudios & Experiencias</h2>
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <div class="stuexp__grid">
+                <div class="stupexp__studies">
+                    <p class="stuexp__title">Estudios</p>
+
+                    <div class="stuexp__item">
+                        <div class="stuexp__img">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="stuexp__text">
+                            <p class="stuexp__name">IED: La Esperanza</p>
+                            <p class="stuexp__degree">Titulo: Bachiller</p>
+                            <p class="stuexp__year">Año: 2018</p>
+                        </div>
+                    </div><!--Item-->
+
+                    <div class="stuexp__item">
+                        <div class="stuexp__img">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="stuexp__text">
+                            <p class="stuexp__name">SENA: Animación 3D</p>
+                            <p class="stuexp__degree">Titulo: Técnologo en 3D</p>
+                            <p class="stuexp__year">Año: 2019 - 2020</p>
+                        </div>
+                    </div><!--Item-->
+                </div>
+
+                <div class="stupexp__exp">
+                    <p class="stuexp__title">Experiencia</p>
+
+                    <div class="stuexp__item">
+                        <div class="stuexp__img">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="stuexp__text">
+                            <p class="stuexp__name">Wunderman Thompson</p>
+                            <p class="stuexp__degree">Profesion: 3D Artist</p>
+                            <p class="stuexp__year">Año: 2019 - Presente</p>
+                        </div>
+                    </div><!--Item-->
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="banner__skills">
+            <div class="skills__layer"></div>
+            <div class="studiesexp__head" data-aos="fade-right">
+                <h2 class="studiesexp__title">Habilidades</h2>
+                <p class="studiesexp__parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur rerum natus neque. Porro beatae non ex. Commodi, eveniet hic praesentium, fugiat placeat sequi at alias delectus beatae ipsum eius tenetur.</p>
+            </div>
+
+            <div class="contenedor">
+                <div class="software__grid">
+                    <div class="progress blue"> 
+                        <span class="progress-left"> <span class="progress-bar"></span> </span>
+                        <span class="progress-right"> <span class="progress-bar"></span> </span>
+                        <div class="skill__grid">
+                            <img class="skill__img" src="build/img/clip.png" alt="Clip Studio">
+                            <p class="skill__text">Clip Studio</p>
+                        </div>
+                    </div> <!--Item-->
+
+                    <div class="progress blue"> 
+                        <span class="progress-left"> <span class="progress-bar"></span> </span>
+                        <span class="progress-right"> <span class="progress-bar"></span> </span>
+                        <div class="skill__grid">
+                            <img class="skill__img" src="build/img/maya.png" alt="Clip Studio">
+                            <p class="skill__text">Maya</p>
+                        </div>
+                    </div> <!--Item-->
+
+                    <div class="progress blue"> 
+                        <span class="progress-left"> <span class="progress-bar"></span> </span>
+                        <span class="progress-right"> <span class="progress-bar"></span> </span>
+                        <div class="skill__grid">
+                            <img class="skill__img" src="build/img/blender.png" alt="Clip Studio">
+                            <p class="skill__text">Blender</p>
+                        </div>
+                    </div> <!--Item-->
+
+                    <div class="progress blue"> 
+                        <span class="progress-left"> <span class="progress-bar"></span> </span>
+                        <span class="progress-right"> <span class="progress-bar"></span> </span>
+                        <div class="skill__grid">
+                            <img class="skill__img" src="build/img/ae.png" alt="Clip Studio">
+                            <p class="skill__text">After Effects</p>
+                        </div>
+                    </div> <!--Item-->
+
+                    <div class="progress blue"> 
+                        <span class="progress-left"> <span class="progress-bar"></span> </span>
+                        <span class="progress-right"> <span class="progress-bar"></span> </span>
+                        <div class="skill__grid">
+                            <img class="skill__img" src="build/img/illustat.png" alt="Clip Studio">
+                            <p class="skill__text">A. Illustrator</p>
+                        </div>
+                    </div> <!--Item-->
+
+                    <div class="progress blue"> 
+                        <span class="progress-left"> <span class="progress-bar"></span> </span>
+                        <span class="progress-right"> <span class="progress-bar"></span> </span>
+                        <div class="skill__grid">
+                            <img class="skill__img" src="build/img/pr.png" alt="Clip Studio">
+                            <p class="skill__text">A. Premiere</p>
+                        </div>
+                    </div> <!--Item-->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+
         <div data-aos="fade-right"  class="portfolio__head">
-            <img class="portfolio__img" src="build/img/nave.png" alt="nave">
             <h2 class="portfolio__title">Portfolio</h2>
         </div>
 
-        <div class="portfolio__grid">
-            <!--Item-->
-            <div data-aos="fade-up"
-            data-aos-duration="1500" class="portfolio__card">
-                <div class="porfolio__card-img">
-                    <img src="build/img/1.jpg" alt="Arte">
-                </div>
-
-                <div class="portfolio__card-title">
-                    Title Here
-                </div>
-
-                <p class="portfolio__card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde. Ut, velit molestiae. Molestiae natus vitae tenetur, nulla rem error. Harum molestias nisi expedita delectus corporis, ullam pariatur? Totam, veritatis?
-                </p>
-
-                <p class="portfolio__card-tags">
-                    <span class="tags">#blender</span>
-                    <span class="tags">#rendering</span>
-                    <span class="tags">#3d</span>
-                    <span class="tags">#cycles</span>
-                    <span class="tags">#ilustration</span>
-                    <span class="tags">#vintage</span>
-                    <span class="tags">#3dart</span>
-                </p>   
-
-                <a class="portfolio__button" href="https://www.instagram.com/p/CCIFsyjDZSP/" target="_blank">Ver Foto</a>
+        <div class="banner__portfolio">
+            <div class="portfolio__layer"></div>
+            <div class="banner__text">
+                <h4 class="banner__title">Nombre del proyecto</h4>
+                <p class="banner__par">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam mollitia ex natus illum.<p>
             </div>
-            <!--.Item-->
+        </div>
 
-            <!--Item-->
-            <div data-aos="fade-up"
-            data-aos-duration="1500" class="portfolio__card">
-                <div class="porfolio__card-img">
-                    <img src="build/img/2.jpg" alt="Arte">
+        <div class="portfolio__videos">
+            <div id="image-slider" class="splide">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/w7Cht2HGkUM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </li>
+                          <li class="splide__slide">
+                            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/w7Cht2HGkUM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </li>
+                          <li class="splide__slide">
+                            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/w7Cht2HGkUM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </li>
+                      </ul>
                 </div>
+            </div>
+        </div>
 
-                <div class="portfolio__card-title">
-                    Title Here
-                </div>
+        <div class="contenedor">
+            
+            <h2 class="portfolio__subtitle">Mis trabajos</h2>
 
-                <p class="portfolio__card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde. Ut, velit molestiae. Molestiae natus vitae tenetur, nulla rem error. Harum molestias nisi expedita delectus corporis, ullam pariatur? Totam, veritatis?
-                </p>
 
-                <p class="portfolio__card-tags">
-                    <span class="tags">#blender</span>
-                    <span class="tags">#rendering</span>
-                    <span class="tags">#3d</span>
-                    <span class="tags">#cycles</span>
-                    <span class="tags">#ilustration</span>
-                    <span class="tags">#vintage</span>
-                    <span class="tags">#3dart</span>
-                </p> 
+            <div class="portfolio__grid">
+
                 
-                <a class="portfolio__button" href="https://www.instagram.com/p/CEIfHkND42W/" target="_blank">Ver Foto</a>
-            </div>
-            <!--.Item-->
-
-            <!--Item-->
-            <div data-aos="fade-up"
-            data-aos-duration="1500" class="portfolio__card">
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1500" class="portfolio__card">
+                    <div class="porfolio__card-img">
+                        <video class="portfolio__video" width="300" src="./build/img/videoloop.mp4" autoplay muted loop></video>
+                    </div>
+    
+                    <div class="portfolio__card-title">
+                        Title Here
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p>   
+    
+                    <a class="portfolio__button" href="https://www.instagram.com/p/CCIFsyjDZSP/" target="_blank">Ver Foto</a>
+                </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1500" class="portfolio__card">
+                    <div class="porfolio__card-img">
+                        <video class="portfolio__video" width="300" src="./build/img/moto.mp4" autoplay muted loop></video>
+                    </div>
+    
+                    <div class="portfolio__card-title">
+                        Title Here
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p> 
+                    
+                    <a class="portfolio__button" href="https://www.instagram.com/p/CEIfHkND42W/" target="_blank">Ver Foto</a>
+                </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1500" class="portfolio__card">
+                    <div class="porfolio__card-img">
+                        <video class="portfolio__video" height="270" src="./build/img/motovidio.mp4" autoplay muted loop></video>
+                    </div>
+    
+                    <div class="portfolio__card-title">
+                        Title Here
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p> 
+                    
+                    <a class="portfolio__button" href="https://www.instagram.com/p/CEQEaIxjMVp/" target="_blank">Ver Foto</a>
+                </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1600" class="portfolio__card">
+                    <div class="porfolio__card-img">
+                        <div id="image-slider2" class="splide" data-splide='{"type":"loop","perPage":1}' data-splide-interval="1000" data-splider-autoplau="true">
+                            <div class="splide__track">
+                                  <ul class="splide__list">
+                                      <li class="splide__slide">
+                                        <img src="build/img/navi1.jpg" alt="Arte">
+                                      </li>
+                                      <li class="splide__slide">
+                                        <img src="build/img/navi2.jpg" alt="Arte">
+                                      </li>
+                                      <li class="splide__slide">
+                                        <img src="build/img/navi25.jpg" alt="Arte">
+                                      </li>
+                                      <li class="splide__slide">
+                                        <img src="build/img/navi3.jpg" alt="Arte">
+                                      </li>
+                                      <li class="splide__slide">
+                                        <img src="build/img/navi4.jpg" alt="Arte">
+                                      </li>
+                                      <li class="splide__slide">
+                                        <img src="build/img/navi5.jpg" alt="Arte">
+                                      </li>
+                                      <li class="splide__slide">
+                                        <img src="build/img/navi6.jpg" alt="Arte">
+                                      </li>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio__card-title">
+                        Title Here
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p> 
+                    
+                    <a class="portfolio__button" href="https://www.instagram.com/p/CEYWnLeDsqC/" target="_blank">Ver Foto</a>
+                </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1600" class="portfolio__card">
                 <div class="porfolio__card-img">
-                    <img src="build/img/3.jpg" alt="Arte">
+                    <div id="image-slider3" class="splide" data-splide='{"type":"loop","perPage":1}' data-splide-interval="1000" data-splider-autoplau="true">
+                        <div class="splide__track">
+                              <ul class="splide__list">
+                                  <li class="splide__slide">
+                                    <img src="build/img/i2.png" alt="Arte">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="build/img/i3.png" alt="Arte">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="build/img/i4.png" alt="Arte">
+                                  </li>
+                              </ul>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="portfolio__card-title">
-                    Title Here
+    
+                    <div class="portfolio__card-title">
+                        Title Here
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p> 
+                    
+                    <a class="portfolio__button" href="https://www.instagram.com/p/CElBYVTDgQ0/" target="_blank">Ver Foto</a>
                 </div>
-
-                <p class="portfolio__card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde. Ut, velit molestiae. Molestiae natus vitae tenetur, nulla rem error. Harum molestias nisi expedita delectus corporis, ullam pariatur? Totam, veritatis?
-                </p>
-
-                <p class="portfolio__card-tags">
-                    <span class="tags">#blender</span>
-                    <span class="tags">#rendering</span>
-                    <span class="tags">#3d</span>
-                    <span class="tags">#cycles</span>
-                    <span class="tags">#ilustration</span>
-                    <span class="tags">#vintage</span>
-                    <span class="tags">#3dart</span>
-                </p> 
-                
-                <a class="portfolio__button" href="https://www.instagram.com/p/CEQEaIxjMVp/" target="_blank">Ver Foto</a>
-            </div>
-            <!--.Item-->
-
-            <!--Item-->
-            <div data-aos="fade-up"
-            data-aos-duration="1600" class="portfolio__card">
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1600" class="portfolio__card">
                 <div class="porfolio__card-img">
-                    <img src="build/img/4.jpg" alt="Arte">
+                    <div id="image-slider4" class="splide" data-splide='{"type":"loop","perPage":1}' data-splide-interval="1000" data-splider-autoplau="true">
+                        <div class="splide__track">
+                              <ul class="splide__list">
+                                  <li class="splide__slide">
+                                    <img src="build/img/albedo1.png" alt="Albedo">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="build/img/albedo2.png" alt="Albedo">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="build/img/albedo3.png" alt="Albedo">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="build/img/albedo4.png" alt="Albedo">
+                                  </li>
+
+                              </ul>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="portfolio__card-title">
-                    Title Here
+    
+                    <div class="portfolio__card-title">
+                        Title Here
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p> 
+                    
+                    <a class="portfolio__button" href="https://www.instagram.com/p/CEyDUdPDmVi/" target="_blank">Ver Foto</a>
                 </div>
-
-                <p class="portfolio__card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde. Ut, velit molestiae. Molestiae natus vitae tenetur, nulla rem error. Harum molestias nisi expedita delectus corporis, ullam pariatur? Totam, veritatis?
-                </p>
-
-                <p class="portfolio__card-tags">
-                    <span class="tags">#blender</span>
-                    <span class="tags">#rendering</span>
-                    <span class="tags">#3d</span>
-                    <span class="tags">#cycles</span>
-                    <span class="tags">#ilustration</span>
-                    <span class="tags">#vintage</span>
-                    <span class="tags">#3dart</span>
-                </p> 
-                
-                <a class="portfolio__button" href="https://www.instagram.com/p/CEYWnLeDsqC/" target="_blank">Ver Foto</a>
-            </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1700" class="portfolio__card">
+                    <div class="porfolio__card-img">
+                        <img src="build/img/7.jpg" alt="Arte">
+                    </div>
+    
+                    <div class="portfolio__card-title">
+                        Title Here
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p> 
+                    
+                    <a class="portfolio__button" href="https://www.instagram.com/p/CE5q7J9jkT7/" target="_blank">Ver Foto</a>
+                </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1700" class="portfolio__card">
+                    <div class="porfolio__card-img">
+                        <img src="build/img/8.jpg" alt="Arte">
+                    </div>
+    
+                    <div class="portfolio__card-title">
+                        Title Here
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p> 
+                    
+                    <a class="portfolio__button" href="https://www.instagram.com/p/CTbJNvsj6IS/" target="_blank">Ver Foto</a>
+                </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1700" class="portfolio__card">
+                    <div class="porfolio__card-img">
+                        <img src="build/img/9.jpg" alt="Arte">
+                    </div>
+    
+                    <div class="portfolio__card-title">
+                        Title Here
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p> 
+                    
+                    <a class="portfolio__button" href="https://www.instagram.com/p/CMBC5_DDz0k/" target="_blank">Ver Foto</a>
+                </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1800" class="portfolio__card">
+                    <div class="porfolio__card-img">
+                        <img src="build/img/10.jpg" alt="Arte">
+                    </div>
+    
+                    <div class="portfolio__card-title">
+                        Title Here
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p> 
+                    
+                    <a class="portfolio__button" href="https://www.instagram.com/p/COE6eU6jk1G/" target="_blank">Ver Foto</a>
+                </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1800" class="portfolio__card">
+                    <div class="porfolio__card-img">
+                        <img src="build/img/11.jpg" alt="Arte">
+                    </div>
+    
+                    <div class="portfolio__card-title">
+                        Title Here
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p> 
+                    
+                    <a class="portfolio__button" href="https://www.instagram.com/p/CXr_UGdDP9C/" target="_blank">Ver Foto</a>
+                </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1800" class="portfolio__card">
+                    <div class="porfolio__card-img">
+                        <img src="build/img/12.jpg" alt="Arte">
+                    </div>
+    
+                    <div class="portfolio__card-title">
+                        Title Here
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p> 
+                    
+                    <a class="portfolio__button" href="https://www.instagram.com/p/CMaGxAzjtsq/" target="_blank">Ver Foto</a>
+                </div>
+                <!--.Item-->
             <!--.Item-->
+            
+        </div>
 
-            <!--Item-->
-            <div data-aos="fade-up"
-            data-aos-duration="1600" class="portfolio__card">
-                <div class="porfolio__card-img">
-                    <img src="build/img/5.jpg" alt="Arte">
-                </div>
-
-                <div class="portfolio__card-title">
-                    Title Here
-                </div>
-
-                <p class="portfolio__card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde. Ut, velit molestiae. Molestiae natus vitae tenetur, nulla rem error. Harum molestias nisi expedita delectus corporis, ullam pariatur? Totam, veritatis?
-                </p>
-
-                <p class="portfolio__card-tags">
-                    <span class="tags">#blender</span>
-                    <span class="tags">#rendering</span>
-                    <span class="tags">#3d</span>
-                    <span class="tags">#cycles</span>
-                    <span class="tags">#ilustration</span>
-                    <span class="tags">#vintage</span>
-                    <span class="tags">#3dart</span>
-                </p> 
-                
-                <a class="portfolio__button" href="https://www.instagram.com/p/CElBYVTDgQ0/" target="_blank">Ver Foto</a>
-            </div>
-            <!--.Item-->
-
-            <!--Item-->
-            <div data-aos="fade-up"
-            data-aos-duration="1600" class="portfolio__card">
-                <div class="porfolio__card-img">
-                    <img src="build/img/6.jpg" alt="Arte">
-                </div>
-
-                <div class="portfolio__card-title">
-                    Title Here
-                </div>
-
-                <p class="portfolio__card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde. Ut, velit molestiae. Molestiae natus vitae tenetur, nulla rem error. Harum molestias nisi expedita delectus corporis, ullam pariatur? Totam, veritatis?
-                </p>
-
-                <p class="portfolio__card-tags">
-                    <span class="tags">#blender</span>
-                    <span class="tags">#rendering</span>
-                    <span class="tags">#3d</span>
-                    <span class="tags">#cycles</span>
-                    <span class="tags">#ilustration</span>
-                    <span class="tags">#vintage</span>
-                    <span class="tags">#3dart</span>
-                </p> 
-                
-                <a class="portfolio__button" href="https://www.instagram.com/p/CEyDUdPDmVi/" target="_blank">Ver Foto</a>
-            </div>
-            <!--.Item-->
-
-            <!--Item-->
-            <div data-aos="fade-up"
-            data-aos-duration="1700" class="portfolio__card">
-                <div class="porfolio__card-img">
-                    <img src="build/img/7.jpg" alt="Arte">
-                </div>
-
-                <div class="portfolio__card-title">
-                    Title Here
-                </div>
-
-                <p class="portfolio__card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde. Ut, velit molestiae. Molestiae natus vitae tenetur, nulla rem error. Harum molestias nisi expedita delectus corporis, ullam pariatur? Totam, veritatis?
-                </p>
-
-                <p class="portfolio__card-tags">
-                    <span class="tags">#blender</span>
-                    <span class="tags">#rendering</span>
-                    <span class="tags">#3d</span>
-                    <span class="tags">#cycles</span>
-                    <span class="tags">#ilustration</span>
-                    <span class="tags">#vintage</span>
-                    <span class="tags">#3dart</span>
-                </p> 
-                
-                <a class="portfolio__button" href="https://www.instagram.com/p/CE5q7J9jkT7/" target="_blank">Ver Foto</a>
-            </div>
-            <!--.Item-->
-
-            <!--Item-->
-            <div data-aos="fade-up"
-            data-aos-duration="1700" class="portfolio__card">
-                <div class="porfolio__card-img">
-                    <img src="build/img/8.jpg" alt="Arte">
-                </div>
-
-                <div class="portfolio__card-title">
-                    Title Here
-                </div>
-
-                <p class="portfolio__card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde. Ut, velit molestiae. Molestiae natus vitae tenetur, nulla rem error. Harum molestias nisi expedita delectus corporis, ullam pariatur? Totam, veritatis?
-                </p>
-
-                <p class="portfolio__card-tags">
-                    <span class="tags">#blender</span>
-                    <span class="tags">#rendering</span>
-                    <span class="tags">#3d</span>
-                    <span class="tags">#cycles</span>
-                    <span class="tags">#ilustration</span>
-                    <span class="tags">#vintage</span>
-                    <span class="tags">#3dart</span>
-                </p> 
-                
-                <a class="portfolio__button" href="https://www.instagram.com/p/CTbJNvsj6IS/" target="_blank">Ver Foto</a>
-            </div>
-            <!--.Item-->
-
-            <!--Item-->
-            <div data-aos="fade-up"
-            data-aos-duration="1700" class="portfolio__card">
-                <div class="porfolio__card-img">
-                    <img src="build/img/9.jpg" alt="Arte">
-                </div>
-
-                <div class="portfolio__card-title">
-                    Title Here
-                </div>
-
-                <p class="portfolio__card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde. Ut, velit molestiae. Molestiae natus vitae tenetur, nulla rem error. Harum molestias nisi expedita delectus corporis, ullam pariatur? Totam, veritatis?
-                </p>
-
-                <p class="portfolio__card-tags">
-                    <span class="tags">#blender</span>
-                    <span class="tags">#rendering</span>
-                    <span class="tags">#3d</span>
-                    <span class="tags">#cycles</span>
-                    <span class="tags">#ilustration</span>
-                    <span class="tags">#vintage</span>
-                    <span class="tags">#3dart</span>
-                </p> 
-                
-                <a class="portfolio__button" href="https://www.instagram.com/p/CMBC5_DDz0k/" target="_blank">Ver Foto</a>
-            </div>
-            <!--.Item-->
-
-            <!--Item-->
-            <div data-aos="fade-up"
-            data-aos-duration="1800" class="portfolio__card">
-                <div class="porfolio__card-img">
-                    <img src="build/img/10.jpg" alt="Arte">
-                </div>
-
-                <div class="portfolio__card-title">
-                    Title Here
-                </div>
-
-                <p class="portfolio__card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde. Ut, velit molestiae. Molestiae natus vitae tenetur, nulla rem error. Harum molestias nisi expedita delectus corporis, ullam pariatur? Totam, veritatis?
-                </p>
-
-                <p class="portfolio__card-tags">
-                    <span class="tags">#blender</span>
-                    <span class="tags">#rendering</span>
-                    <span class="tags">#3d</span>
-                    <span class="tags">#cycles</span>
-                    <span class="tags">#ilustration</span>
-                    <span class="tags">#vintage</span>
-                    <span class="tags">#3dart</span>
-                </p> 
-                
-                <a class="portfolio__button" href="https://www.instagram.com/p/COE6eU6jk1G/" target="_blank">Ver Foto</a>
-            </div>
-            <!--.Item-->
-
-            <!--Item-->
-            <div data-aos="fade-up"
-            data-aos-duration="1800" class="portfolio__card">
-                <div class="porfolio__card-img">
-                    <img src="build/img/11.jpg" alt="Arte">
-                </div>
-
-                <div class="portfolio__card-title">
-                    Title Here
-                </div>
-
-                <p class="portfolio__card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde. Ut, velit molestiae. Molestiae natus vitae tenetur, nulla rem error. Harum molestias nisi expedita delectus corporis, ullam pariatur? Totam, veritatis?
-                </p>
-
-                <p class="portfolio__card-tags">
-                    <span class="tags">#blender</span>
-                    <span class="tags">#rendering</span>
-                    <span class="tags">#3d</span>
-                    <span class="tags">#cycles</span>
-                    <span class="tags">#ilustration</span>
-                    <span class="tags">#vintage</span>
-                    <span class="tags">#3dart</span>
-                </p> 
-                
-                <a class="portfolio__button" href="https://www.instagram.com/p/CXr_UGdDP9C/" target="_blank">Ver Foto</a>
-            </div>
-            <!--.Item-->
-
-            <!--Item-->
-            <div data-aos="fade-up"
-            data-aos-duration="1800" class="portfolio__card">
-                <div class="porfolio__card-img">
-                    <img src="build/img/12.jpg" alt="Arte">
-                </div>
-
-                <div class="portfolio__card-title">
-                    Title Here
-                </div>
-
-                <p class="portfolio__card-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde. Ut, velit molestiae. Molestiae natus vitae tenetur, nulla rem error. Harum molestias nisi expedita delectus corporis, ullam pariatur? Totam, veritatis?
-                </p>
-
-                <p class="portfolio__card-tags">
-                    <span class="tags">#blender</span>
-                    <span class="tags">#rendering</span>
-                    <span class="tags">#3d</span>
-                    <span class="tags">#cycles</span>
-                    <span class="tags">#ilustration</span>
-                    <span class="tags">#vintage</span>
-                    <span class="tags">#3dart</span>
-                </p> 
-                
-                <a class="portfolio__button" href="https://www.instagram.com/p/CMaGxAzjtsq/" target="_blank">Ver Foto</a>
-            </div>
-            <!--.Item-->
-        <!--.Item-->
+        <a href="https://www.behance.net/samuelclavijo" target="_blank" class="more">+</a>    
+       
+        
     </section>
 
-    <section class="contactme contenedor">
+    <section class="contactme">
 
-        <div data-aos="fade-right" class="contactme__head">
-            <img class="contactme__img" src="build/img/nave.png" alt="nave">
-            <h2 class="contactme__title">Contact Me</h2>
+        <div data-aos="fade-right">
+            <div class="banner__contactme">
+                <div class="contactme__layer"></div>
+                <h2 class="contactme__title">Contact Me</h2>
+            </div>
+
+            <div class="contenedor">
+                <div class="contactme__flex">
+                    <div class="contactme__form">
+                        <form id="formulario" class="contactme__form-flex" action="">
+                            <textarea id="textarea" class="contactme__textarea" placeholder="Escriba un mensaje..." required></textarea>
+                            <button id="submit" class="contactme__button">Enviar Whatsapp</button>
+                        </form>            
+                    </div>
+            
+                    <div class="contactme__imgs">
+                        <img src="build/img/designer.svg" alt="designer">
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="contactme__flex">
-            <div class="contactme__form">
-                <form id="formulario" class="contactme_form-flex" action="">
-                    <textarea id="textarea" class="contactme__textarea" required></textarea>
-                    <button id="submit" class="contactme__button">Enviar Whatsapp</button>
-                </form>            
-            </div>
-    
-            <div class="contactme__imgs">
-                <img src="build/img/designer.svg" alt="designer">
-            </div>
-        </div>
+        
 
         
     </section>
@@ -519,16 +801,27 @@
     </footer>
 
     <span class="ir-arriba fas fa-chevron-up"></span>
-    
+    <!--CDN Bootstrap Jquery-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--Splide JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '#image-slider' ).mount();
+            new Splide( '#image-slider2').mount();
+            new Splide( '#image-slider3').mount();
+            new Splide( '#image-slider4').mount();
+        } );
+        </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--Inicianlizando AOS-->
     <script>
         AOS.init();
     </script>
+    
     <script src="build/js/app.js"></script>
     <script src="build/js/boton.js"></script>
     <script src="build/js/enviarwpp.js"></script>
-    
 </body>
 </html>

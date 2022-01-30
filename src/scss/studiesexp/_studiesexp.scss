@@ -1,0 +1,142 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.banner__studiesexp{
+    margin: 10rem 0;
+    background-image: url(../img/5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+
+    @include m.tablet{
+        height: 30vh;
+    }
+}
+
+.studiesexp__layer{
+    background-color: v.$negro;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    z-index: -9999;
+}
+
+.studiesexp__title{
+    color: v.$blanco;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+
+    @include m.desktop { 
+        font-size: 5rem;
+    }
+}
+
+.studiesexp__parrafo{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+/*Estudios y Experiencias */
+
+.stuexp__grid{
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 10rem;
+
+    @include m.tablet{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+.stupexp__studies,
+.stupexp__exp{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+    align-items: center;
+
+    @include m.desktop{
+        height: 30rem;
+    }
+}
+
+.stuexp__item{
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: center;
+    // gap: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+
+}
+
+.stuexp__title{
+    color: v.$grisOscuro2;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2rem;
+    text-align: center;
+
+    @include m.tablet{
+        font-size: 3rem;
+    }
+}
+
+.stuexp__img{
+    background-color: v.$blanco;
+    padding: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid lighten(v.$grisOscuro2, 30%);
+    font-size: 3rem;
+    color: v.$secundario;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.03);
+    -moz-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.03);
+    box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.03);
+
+    @include m.desktop{
+        width: 12rem;
+        height: 12rem;
+        font-size: 4rem;
+    }
+}
+
+.stuexp__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p{
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+
+.stuexp__name{
+    font-weight: bold;
+}
+
+.stuexp__degree,
+.stuexp__year{
+    font-weight: lighter;
+    font-style: italic;
+}
