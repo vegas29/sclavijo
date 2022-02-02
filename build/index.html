@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sclavijob - Artista 3D</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Staatliches" rel="stylesheet">
+    <!--Fuente Kanit-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!--CDN Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--.Favicon-->
+    <!--CDN AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--CDN Splider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    
+</head>
+<body>
+  
+    <header class="header">
+
+        <div class="header__layer"></div>
+
+        <!--Menu Icono-->
+
+        <div class="header__flex">
+            <div class="header__menu">
+                <i class="fas fa-bars" onclick="openNav()"></i>
+            </div>
+            <div class="flex__menu">
+                <a class="menu__item" href="english.html"><img src="img/english.png" alt="english"></a>
+                <a class="menu__item" onclick="nochePaz()"><i class="fas fa-moon"></i></a>
+            </div>
+        </div>
+
+        <!--.Menu Icono-->
+
+        <!-- The overlay -->
+
+        <div class="header__title">
+            <img data-aos="fade-up" data-aos-duration="1000" src="img/logo.png" alt="logo">
+            <p data-aos="fade-up" data-aos-duration="1500" class="header__title-name">Samuel Clavijo Samuel Samuel</p>
+            <p data-aos="fade-up" data-aos-duration="1500" class="header__title-pro">Diseñador gráfico y Artista 3D</p>
+        </div>
+    </header>
+
+    <!--Menu Movil-->
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#aboutme">Acerca de mi</a>
+            <a href="#studiesexp">Estudios & Experiencias</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#portfolio">Portafolio</a>
+            <a href="#contactme">Contacto</a>
+        </div>
+    </div>
+
+    <!--.Menu Movil-->
+
+
+    <section class="aboutme contenedor">
+        <div id="aboutme" data-aos="fade-right"  class="aboutme__head">
+            <h2 class="aboutme__title">Acerca de mi</h2>
+        </div>
+
+        <div class="aboutme__body">
+            <div class="aboutme__picture">
+                <img src="img/pp.jpg" alt="Samuel Clavijo">
+            </div>
+
+            <div class="aboutme__text">
+                <p>Diseñador 3D especializado en el modelado y texturizado con más de un año de experiencia de diseño gráfico en varias marcas reconocidas. Me caracterizo por ser una persona a quien le gusta aprender y ser muy flexible en el trabajo, para sacar el mayor provecho a cada proyecto incorporando siempre nuevos aprendizajes.</p>
+                
+                <h4 class="aboutme__languages">Idiomas</h4>
+
+                <div class="aboutme__flex">
+                    <div class="language">
+                        <img class="language__img" src="img/spanish.png" alt="Idioma espanol">
+                        <div class="language__text">
+                            <p class="language__name">Español</p>
+                            <p class="language__lvl">Nativo</p>
+                        </div>
+                    </div><!--Language Item-->
+
+                    <div class="language">
+                        <img class="language__img" src="img/english.png" alt="Idioma espanol">
+                        <div class="language__text">
+                            <p class="language__name">Inglés</p>
+                            <p class="language__lvl">Nivel: B1</p>
+                        </div>
+                        
+                    </div><!--Language Item-->
+
+                    <div class="language">
+                        <img class="language__img" src="img/France.png" alt="Idioma espanol">
+                        <div class="language__text">
+                            <p class="language__name">Frances</p>
+                            <p class="language__lvl">Nivel: A2</p>
+                        </div>
+                    </div><!--Language Item-->
+                </div>
+            </div>
+            
+        </div>
+
+        <!--Cualidades-->
+        <div class="aboutme__qualities">
+            <h3 class="aboutme__subtitle">Cualidades</h3>
+
+            <!--Grid Cualidades-->
+            <div class="grid__qualities">
+
+                <div class="quality__item">
+                    <i class="fas fa-lightbulb"></i>
+                    <p class="quality__text">Creatividad</p>
+                </div><!--Item-->
+
+                <div class="quality__item">
+                    <i class="fas fa-comments"></i>
+                    <p class="quality__text">Comunicacion</p>
+                </div><!--Item-->
+
+                <div class="quality__item">
+                    <i class="fas fa-cogs"></i>
+                    <p class="quality__text">Versatilidad</p>
+                </div><!--Item-->
+
+                <div class="quality__item">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <p class="quality__text">Organizacion</p>
+                </div><!--Item-->
+
+                <div class="quality__item">
+                    <i class="fas fa-users"></i>
+                    <p class="quality__text">Equipo</p>
+                </div><!--Item-->
+
+                <div class="quality__item">
+                    <i class="fas fa-signal"></i>
+                    <p class="quality__text">Proactividad</p>
+                </div><!--Item-->
+
+            </div>
+        </div>
+        <!--.Cualidades-->
+
+        <!--Intereses-->
+        <div class="aboutme__interests">
+            <h3 class="aboutme__subtitle">Intereses</h3>
+
+            <!--Grid Cualidades-->
+            <div class="grid__interests">
+
+                <div class="interest__item">
+                    <img class="interest__img" src="./img/volleyball.jpg" alt="Volleyball">
+                    <div class="overlay__img">
+                      <div class="text">Volleyball</div>
+                    </div>
+                </div><!--Item-->
+
+                <div class="interest__item">
+                    <img class="interest__img" src="./img/astronomia.jpg" alt="Astronomia">
+                    <div class="overlay__img">
+                      <div class="text">Astronomía</div>
+                    </div>
+                </div><!--Item-->
+
+                <div class="interest__item">
+                    <img class="interest__img" src="./img/arte.jpg" alt="Arte">
+                    <div class="overlay__img">
+                      <div class="text">Arte</div>
+                    </div>
+                </div><!--Item-->
+
+                <div class="interest__item">
+                    <img class="interest__img" src="./img/gato1.jpg" alt="Gatos">
+                    <div class="overlay__img">
+                      <div class="text">Gatos</div>
+                    </div>
+                </div><!--Item-->
+
+                <div class="interest__item">
+                    <img class="interest__img" src="./img/videojuegos.jpg" alt="Videojuegos">
+                    <div class="overlay__img">
+                      <div class="text">Videojuegos</div>
+                    </div>
+                </div><!--Item-->
+
+        </div>
+        
+    </section>
+
+    <section id="studiesexp" class="studies ">
+        <div class="banner__studiesexp">
+            <div class="studiesexp__layer"></div>
+            <div data-aos="fade-right"  class="portfolio__head">
+                <h2 class="studiesexp__title">Estudios & Experiencias</h2>
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <div class="stuexp__grid">
+                <div class="stupexp__studies">
+                    <p class="stuexp__title">Estudios</p>
+
+                    <div class="stuexp__item">
+                        <div class="stuexp__img">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="stuexp__text">
+                            <p class="stuexp__name">IED: La Esperanza</p>
+                            <p class="stuexp__degree">Titulo: Bachiller</p>
+                            <p class="stuexp__year">Año: 2018</p>
+                        </div>
+                    </div><!--Item-->
+
+                    <div class="stuexp__item">
+                        <div class="stuexp__img">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="stuexp__text">
+                            <p class="stuexp__name">SENA: Animación 3D</p>
+                            <p class="stuexp__degree">Titulo: Técnologo en 3D</p>
+                            <p class="stuexp__year">Año: 2019 - 2020</p>
+                        </div>
+                    </div><!--Item-->
+                </div>
+
+                <div class="stupexp__exp">
+                    <p class="stuexp__title">Experiencia</p>
+
+                    <div class="stuexp__item">
+                        <div class="stuexp__img">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="stuexp__text">
+                            <p class="stuexp__name">Wunderman Thompson</p>
+                            <p class="stuexp__degree">Profesion: 3D Artist</p>
+                            <p class="stuexp__year">Año: 2019 - Presente</p>
+                        </div>
+                    </div><!--Item-->
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="banner__skills">
+            <div class="skills__layer"></div>
+            <div class="studiesexp__head" data-aos="fade-right">
+                <h2 class="studiesexp__title">Software</h2>
+                <!--<p class="studiesexp__parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur rerum natus neque. Porro beatae non ex. Commodi, eveniet hic praesentium, fugiat placeat sequi at alias delectus beatae ipsum eius tenetur.</p>-->
+            </div>
+
+            <div class="contenedor">
+                <div class="software__grid">
+
+                    <div class="card">
+                        <div class="box">
+                          <div class="percent">
+                            <svg>
+                              <circle cx="70" cy="70" r="70"></circle>
+                              <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                              <div class="skill__grid">
+                                <img class="skill__img" src="./img/maya.png" alt="Maya">
+                                <p class="skill__text">Maya</p>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div><!--Item-->
+
+                    <div class="card">
+                        <div class="box">
+                          <div class="percent">
+                            <svg>
+                              <circle cx="70" cy="70" r="70"></circle>
+                              <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                              <div class="skill__grid">
+                                <img class="skill__img" src="./img/ps.png" alt="Photoshop">
+                                <p class="skill__text">Photoshop</p>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div><!--Item-->
+
+                    <div class="card">
+                        <div class="box">
+                          <div class="percent">
+                            <svg>
+                              <circle cx="70" cy="70" r="70"></circle>
+                              <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                              <div class="skill__grid">
+                                <img class="skill__img" src="./img/illustat.png" alt="Illustrator">
+                                <p class="skill__text">Illustrator</p>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div><!--Item-->
+
+                    <div class="card">
+                        <div class="box">
+                          <div class="percent">
+                            <svg>
+                              <circle cx="70" cy="70" r="70"></circle>
+                              <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                              <div class="skill__grid">
+                                <img class="skill__img" src="./img/blender.png" alt="Blender">
+                                <p class="skill__text">Blender</p>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div><!--Item-->
+
+                    <div class="card">
+                        <div class="box">
+                          <div class="percent">
+                            <svg>
+                              <circle cx="70" cy="70" r="70"></circle>
+                              <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                              <div class="skill__grid">
+                                <img class="skill__img" src="./img/painter.png" alt="S. Painter">
+                                <p class="skill__text">S. Painter</p>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div><!--Item-->
+
+                    <div class="card">
+                        <div class="box">
+                          <div class="percent">
+                            <svg>
+                              <circle cx="70" cy="70" r="70"></circle>
+                              <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                              <div class="skill__grid">
+                                <img class="skill__img" src="./img/pr.png" alt="Premiere">
+                                <p class="skill__text">Premiere</p>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div><!--Item-->
+
+                    <div class="card">
+                        <div class="box">
+                          <div class="percent">
+                            <svg>
+                              <circle cx="70" cy="70" r="70"></circle>
+                              <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                              <div class="skill__grid">
+                                <img class="skill__img" src="./img/ae.png" alt="After Effects">
+                                <p class="skill__text">After Effects</p>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div><!--Item-->
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+
+        <div data-aos="fade-right"  class="portfolio__head">
+            <h2 class="portfolio__title">Portfolio</h2>
+        </div>
+
+        <div class="banner__portfolio">
+            <div class="portfolio__layer"></div>
+            <div class="banner__text">
+                <h4 class="banner__title">My Reel</h4>
+                <!--<p class="banner__par">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia explicabo, ipsa eum, officiis labore est quibusdam atque alias nihil natus ipsam ex commodi adipisci eligendi? Nulla iure ut unde ipsam.<p>-->
+            </div>
+        </div>
+
+        <div class="portfolio__videos">
+            <div id="image-slider" class="splide">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/LbjTtA6waj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor">
+            
+            <h2 class="portfolio__subtitle">Mis trabajos</h2>
+
+
+            <div class="portfolio__grid">
+
+
+                
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1500" class="portfolio__card">
+                <div class="porfolio__card-img">
+                    <img src="img/videoloop.jpg" alt="Arte">
+                </div>
+    
+                    <div class="portfolio__card-title">
+                        Vuse Loop
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Video loop creado para celebrar el día del amor y la amistad para Vuse Colombia.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p>   
+
+                </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1500" class="portfolio__card">
+                    <div class="porfolio__card-img">
+                        <img src="img/motorojo.jpg" alt="Arte">
+                    </div>
+    
+                    <div class="portfolio__card-title">
+                        CRF50F Lego
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Moto modelada al estilo de Lego para proyecto interno de Honda Colombia. (CRF50F)
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p> 
+
+                </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1500" class="portfolio__card">
+                    <div class="porfolio__card-img">
+                        <img src="img/xray.jpg" alt="Videoloop">
+                    </div>
+    
+                    <div class="portfolio__card-title">
+                        X-Ray Navi  
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Video loop del modelado de la moto Navi enseñando su retopología con efecto de rayos X.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p> 
+
+                </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1600" class="portfolio__card">
+                    <div class="porfolio__card-img">
+                        <div id="image-slider2" class="splide" data-splide='{"type":"loop","perPage":1}' data-splide-interval="1000" data-splider-autoplau="true">
+                            <div class="splide__track">
+                                  <ul class="splide__list">
+                                      <li class="splide__slide">
+                                        <img src="img/navi1.jpg" alt="Arte">
+                                      </li>
+                                      <li class="splide__slide">
+                                        <img src="img/navi2.jpg" alt="Arte">
+                                      </li>
+                                      <li class="splide__slide">
+                                        <img src="img/navi25.jpg" alt="Arte">
+                                      </li>
+                                      <li class="splide__slide">
+                                        <img src="img/navi3.jpg" alt="Arte">
+                                      </li>
+                                      <li class="splide__slide">
+                                        <img src="img/navi4.jpg" alt="Arte">
+                                      </li>
+                                      <li class="splide__slide">
+                                        <img src="img/navi5.jpg" alt="Arte">
+                                      </li>
+                                      <li class="splide__slide">
+                                        <img src="img/navi6.jpg" alt="Arte">
+                                      </li>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio__card-title">
+                        Moto Navi
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Vistas del modelo de la moto Navi texturizada usando iluminación y motor de render Cycles.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p> 
+
+                </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1600" class="portfolio__card">
+                <div class="porfolio__card-img">
+                    <div id="image-slider3" class="splide" data-splide='{"type":"loop","perPage":1}' data-splide-interval="1000" data-splider-autoplau="true">
+                        <div class="splide__track">
+                              <ul class="splide__list">
+                                  <li class="splide__slide">
+                                    <img src="img/i2.png" alt="Arte">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="img/i3.png" alt="Arte">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="img/i4.png" alt="Arte">
+                                  </li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                    <div class="portfolio__card-title">
+                        Ilustraciones Vuse
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Propuestas de ilustraciones de producto para celebrar el día del amor y la amistad con Vuse.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p> 
+
+                </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1600" class="portfolio__card">
+                <div class="porfolio__card-img">
+                    <div id="image-slider4" class="splide" data-splide='{"type":"loop","perPage":1}' data-splide-interval="1000" data-splider-autoplau="true">
+                        <div class="splide__track">
+                              <ul class="splide__list">
+                                  <li class="splide__slide">
+                                    <img src="img/albedo1.png" alt="Albedo">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="img/albedo2.png" alt="Albedo">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="img/albedo3.png" alt="Albedo">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="img/albedo4.png" alt="Albedo">
+                                  </li>
+
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                    <div class="portfolio__card-title">
+                        Illustración Albedo
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Ilustración de la cabeza del personaje Albedo para practicar el modelado de cabello hecho con curvas.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p> 
+                    
+                </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1700" class="portfolio__card">
+                <div class="porfolio__card-img">
+                    <div id="image-slider5" class="splide" data-splide='{"type":"loop","perPage":1}' data-splide-interval="1000" data-splider-autoplau="true">
+                        <div class="splide__track">
+                              <ul class="splide__list">
+                                  <li class="splide__slide">
+                                    <img src="img/aguacate.png" alt="Aguacate">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="img/panqueis.png" alt="Panqueis">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="img/torta.png" alt="Torta">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="img/Sandia.png" alt="Sandia">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="img/malteada.png" alt="Sandia">
+                                  </li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                    <div class="portfolio__card-title">
+                        Comida seria y suave
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Conjuntos de ilustraciones de comida proponiendo un estilo sencillo y divertido.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p> 
+                    
+                </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1700" class="portfolio__card">
+                    <div class="porfolio__card-img">
+                        <img src="img/ponque.png" alt="Arte">
+                    </div>
+    
+                    <div class="portfolio__card-title">
+                        Eclair dulce
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Primera práctica en mi iniciación con Blender de un Eclair con particulas de chispitas.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p> 
+                    
+                </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1700" class="portfolio__card">
+                    <div class="porfolio__card-img">
+                        <div id="image-slider6" class="splide" data-splide='{"type":"loop","perPage":1}' data-splide-interval="1000" data-splider-autoplau="true">
+                            <div class="splide__track">
+                                  <ul class="splide__list">
+                                      <li class="splide__slide">
+                                        <img src="img/render1.png" alt="Render">
+                                      </li>
+                                      <li class="splide__slide">
+                                        <img src="img/render2.png" alt="Render">
+                                      </li>
+                                      <li class="splide__slide">
+                                        <img src="img/render3.png" alt="Render">
+                                      </li>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio__card-title">
+                        Epod-2 & Pod
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Ilustración para la apreciación de los productos Epod-2 y Pod de Vuse para futuros proyectos.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p> 
+                    
+                </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1800" class="portfolio__card">
+                    <div class="porfolio__card-img">
+                        <img src="img/10.jpg" alt="Arte">
+                    </div>
+    
+                    <div class="portfolio__card-title">
+                        Desierto Surrealista
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Ilustración de paisaje desértico surrealista combinado con figuras geométricas.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                        
+                    </p> 
+                    
+                </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1800" class="portfolio__card">
+                    <div class="porfolio__card-img">
+                        <img src="img/11.jpg" alt="Cuarto de los 80's">
+                    </div>
+    
+                    <div class="portfolio__card-title">
+                        Cuarto de los 80's
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Ilustración de un cuarto inspirado en la cultura y tecnología de la década de los 80's.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>  
+                    </p> 
+                    
+                </div>
+                <!--.Item-->
+    
+                <!--Item-->
+                <div data-aos="fade-up"
+                data-aos-duration="1800" class="portfolio__card">
+                    <div class="porfolio__card-img">
+                        <img id="myImg1" src="img/12.jpg" alt="Montaña Surrealista">
+                    </div>
+                    
+                    <div class="portfolio__card-title">
+                        Montaña Surrealista
+                    </div>
+    
+                    <p class="portfolio__card-text">
+                        Ilustración del paisaje de una montaña y nubes procedurales combinados con figuras geométricas.
+                    </p>
+    
+                    <p class="portfolio__card-tags">
+                        <span class="tags">#blender</span>
+                        <span class="tags">#rendering</span>
+                        <span class="tags">#3d</span>
+                    </p> 
+                    
+                </div>
+                <!--.Item-->
+            <!--.Item-->
+            </div>
+        </div>
+
+        <a href="https://www.behance.net/samuelclavijo" target="_blank" class="more">+</a>    
+           
+    </section>
+
+    <section class="contactme">
+
+        <div data-aos="fade-right">
+            <div class="banner__contactme">
+                <div class="contactme__layer"></div>
+                <h2 class="contactme__title">Contacto</h2>
+            </div>
+
+            <div class="contenedor">
+                <div class="contactme__flex">
+                    <div class="contactme__form">
+                        <form id="formulario" class="contactme__form-flex" action="">
+                            <textarea id="textarea" class="contactme__textarea" placeholder="Escriba un mensaje..." required></textarea>
+                            <button id="submit" class="contactme__button">Enviar Whatsapp</button>
+                        </form>            
+                    </div>
+            
+                    <div class="contactme__imgs">
+                        <img src="img/designer.svg" alt="designer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <footer class="footer">
+        <h3 data-aos="fade-up" class="footer__title">Redes Sociales</h3>
+
+        <div class="footer__redes">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/sclaviijob/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.behance.net/samuelclavijo" target="_blank"><i class="fab fa-behance"></i></a>
+            <a href="#textarea"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <div class="footer__credits">
+            <p>Todos los derechos reservados a sclavijob</p>
+
+            <p>Desarrollado por Alejandro Perdomo 2022</p>
+        </div>
+    </footer>
+
+    <span class="ir-arriba fas fa-chevron-up"></span>
+    <!--CDN Bootstrap Jquery-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--Splide JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '#image-slider' ).mount();
+            new Splide( '#image-slider2').mount();
+            new Splide( '#image-slider3').mount();
+            new Splide( '#image-slider4').mount();
+            new Splide( '#image-slider5').mount();
+            new Splide( '#image-slider6').mount();
+        } );
+        </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Inicianlizando AOS-->
+    <script>
+        AOS.init();
+    </script>
+    
+    <script src="js/app.js"></script>
+    <script src="js/boton.js"></script>
+    <script src="js/enviarwpp.js"></script>
+</body>
+</html>

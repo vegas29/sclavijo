@@ -13,6 +13,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+
 }
 
 
@@ -34,7 +35,7 @@
 }
 
 .banner__title{
-    padding-top: 5rem;
+    margin: 4rem 0;
     font-size: 3.2rem;
     font-weight: bold;
 
@@ -45,9 +46,9 @@
 }
 
 .banner__par{
-    font-size: 1.2rem;
-    padding: 0 2rem;
     font-size: 1.5rem;
+    width: 90%;
+    text-align: left;
     max-width: 120rem;
     margin: 0 auto;
 
@@ -57,7 +58,7 @@
 }
 
 .portfolio__videos{
-    margin-top: -20rem;
+    margin-top: -25rem;
     z-index: 999;
     position: relative;
 }
@@ -82,7 +83,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5rem 0;
+    padding: 5rem 0 5rem 0;
     gap: 1rem;
 
     img{
@@ -143,6 +144,10 @@
     -webkit-box-shadow: 0px -2px 31px -6px rgba(0,0,0,0.38);
     -moz-box-shadow: 0px -2px 31px -6px rgba(0,0,0,0.38);
     box-shadow: 0px -2px 31px -6px rgba(0,0,0,0.38);
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 .porfolio__card-img{
@@ -226,14 +231,16 @@ video{
     border-radius: 50%;
     display: block;
     margin: 0 auto;
-    padding: 1rem 1.8rem;
+    padding: 1.8rem 2.2rem;
     color: v.$blanco;
     font-weight: bold;
     margin-top: 7rem;
-    width: 4.5rem;
+    width: 6rem;
     cursor: pointer;
+    font-size: 2.2rem;
 
     &:hover{
+        background-color: darken(v.$secundario, 7%);
         color: v.$blanco;
     }
 }
